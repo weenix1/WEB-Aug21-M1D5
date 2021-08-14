@@ -61,16 +61,28 @@ Write a function "boundary" which accept an integer n and returns true if n is w
 /* WRITE YOUR CODE HERE */
 
 function boundary(n) {
-  let range = [1, 2];
+  if ((n >= 20 && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+console.log(boundary(200));
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
 /* WRITE YOUR CODE HERE */
-
+function strivify(firstString) {
+  let result = "strive" + firstString;
+  if (firstString === "strive") {
+    return firstString;
+  }
+  return result;
+}
+console.log(`the original string is ${strivify("strive")}`);
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
@@ -89,6 +101,18 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 */
 
 /* WRITE YOUR CODE HERE */
+
+function upperFirst() {
+  const stringUpper = "my first name";
+  const word = stringUpper.split(" ");
+  for (let i = 0; i < word.length; i++) {
+    word[i] = word[i].charAt(0).toUpperCase() + word[i].slice(1);
+  }
+  const capitalizeLetter = word.join(" ");
+  return capitalizeLetter;
+}
+
+console.log(upperFirst());
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
