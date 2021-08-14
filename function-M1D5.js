@@ -118,8 +118,15 @@ Write a function "reverseString" to programmatically reverse a given string (es.
 */
 
 /* WRITE YOUR CODE HERE */
-writeHeader("Exercise6");
 
+writeHeader("Exercise7");
+
+function reverseString(strings) {
+  strings = "Strive";
+  return strings.split("").reverse().join("");
+}
+
+console.log(reverseString());
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
