@@ -6,6 +6,12 @@ ASSIGNMENT RULES
 - You can Google / use StackOverflow BUT we suggest you to use just the material provided
 */
 
+const writeHeader = function (title) {
+  console.log(`\n\n]>-------------<[ ${title.toUpperCase()} ]>-------------<[`);
+};
+
+writeHeader("Exercise1");
+
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculates the area of the associated rectangle.
 */
@@ -23,6 +29,7 @@ console.log(`The area of a rectangle is :${rectangle(11, 12)}`);
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+writeHeader("Exercise2");
 
 function crazySum(a, b) {
   let sum;
@@ -40,6 +47,7 @@ console.log(`The sum of two integers a and b is: ${crazySum(3, 3)}`);
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
+writeHeader("Exercise3");
 
 function crazyDiff(max, min) {
   let absValue;
@@ -59,6 +67,7 @@ Write a function "boundary" which accept an integer n and returns true if n is w
 */
 
 /* WRITE YOUR CODE HERE */
+writeHeader("Exercise4");
 
 function boundary(n) {
   if ((n >= 20 && n <= 100) || n === 400) {
@@ -75,6 +84,8 @@ It should add the word "Strive" in front of the given string, but if the given s
 */
 
 /* WRITE YOUR CODE HERE */
+writeHeader("Exercise5");
+
 function strivify(firstString) {
   let result = "strive" + firstString;
   if (firstString === "strive") {
@@ -89,18 +100,32 @@ HINT: Module Operator
 */
 
 /* WRITE YOUR CODE HERE */
+writeHeader("Exercise6");
+
+function check3and7(pnum) {
+  let multipleNum = pnum;
+  if (multipleNum % 3 === 0 || multipleNum % 7 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(check3and7(4));
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
 
 /* WRITE YOUR CODE HERE */
+writeHeader("Exercise6");
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
 /* WRITE YOUR CODE HERE */
+writeHeader("Exercise8");
 
 function upperFirst() {
   const stringUpper = "my first name";
