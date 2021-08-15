@@ -62,6 +62,18 @@ function crazyDiff(max, min) {
 console.log(
   `The absolute difference between this numbers: ${crazyDiff(19, 10)}`
 );
+
+/* function crazyDiff(num) {
+  if (num > 19) {
+    return Math.abs(num - 19) * 3;
+  } else {
+    return Math.abs(num - 19);
+  }
+}
+// const crazyDiff = (num) =>
+//   num > 19 ? Math.abs(num - 19) * 3 : Math.abs(num - 19);
+console.log(crazyDiff(3)); */
+
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
@@ -127,6 +139,13 @@ function reverseString(strings) {
 }
 
 console.log(reverseString());
+
+/* function reverseString(str) {
+  return str.split("").reverse("").join("");
+}
+//const reverseString = (str) => str.split("").reverse("").join("");
+console.log(reverseString("Strive")); */
+
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
@@ -146,6 +165,11 @@ function upperFirst() {
 
 console.log(upperFirst());
 
+/* function upperFirst(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(upperFirst("strivers")); */
+
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
@@ -159,6 +183,12 @@ function cutString(string, max) {
 }
 
 console.log(cutString());
+
+/* function cutString(str) {
+  return str.slice(1, str.length - 1);
+}
+console.log(cutString("hello")); */
+
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
@@ -183,6 +213,10 @@ The function returns the sum of the numbers bigger than 5.
 */
 writeHeader("Exercise11");
 /* WRITE YOUR CODE HERE */
+function checkArray() {
+  let receiveArray = [];
+  for (let i = 0; i > 5; i++) {}
+}
 
 /* EXERCISE 12
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
