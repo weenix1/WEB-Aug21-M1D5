@@ -286,3 +286,18 @@ Ex.: X = 3, Y = 2
 */
 writeHeader("Exercise21");
 /* WRITE YOUR CODE HERE */
+function whatDayIsIt() {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let date = new Date();
+  let dayName = days[date.getDay()];
+  return dayName;
+}
+console.log(whatDayIsIt());
